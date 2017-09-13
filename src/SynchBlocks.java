@@ -45,5 +45,7 @@ public class SynchBlocks {
         } catch (InterruptedException e) {
             System.err.println("Interrupted!");
         }
+
+
     }
 }
