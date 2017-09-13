@@ -11,6 +11,11 @@ public class ProducerAndCustomerWellDoneRealisation {
                     e.printStackTrace();
                 }
             System.out.println("Have got: " + n);
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
             valueSet = false;
             notify();
             return n;
