@@ -1,5 +1,5 @@
 public class SuspendResume {
-    class NewThread implements Runnable {
+    static class NewThread implements Runnable {
         String threadName;
         Thread thread;
         boolean suspendFlag;
