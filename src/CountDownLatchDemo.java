@@ -18,7 +18,7 @@ public class CountDownLatchDemo {
 }
 
 class MyThread implements Runnable {
-     private CountDownLatch countDownLatch;
+    private CountDownLatch countDownLatch;
 
     MyThread(CountDownLatch c){
         this.countDownLatch = c;
