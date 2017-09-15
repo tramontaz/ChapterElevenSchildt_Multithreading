@@ -15,7 +15,7 @@ public class SimpleExecutor {
         executorService.execute(new MyExecutorThread(countDownLatch1, "First"));
         executorService.execute(new MyExecutorThread(countDownLatch2, "Second"));
         executorService.execute(new MyExecutorThread(countDownLatch3, "Third"));
-        executorService.execute(new MyExecutorThread(countDownLatch4, "Fifth"));
+        executorService.execute(new MyExecutorThread(countDownLatch4, "Fourth"));
 
         try {
             countDownLatch1.await();
