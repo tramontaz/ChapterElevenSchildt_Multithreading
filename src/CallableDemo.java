@@ -14,10 +14,10 @@ public class CallableDemo {
         futureFactorial = executorService.submit(new Factorial(5));
 
         try {
-            System.out.println(futureSum.get());
-            System.out.println(futureLengthOfTheHypotenuse.get());
-            System.out.println(futureFactorial.get());
-        } catch (ExecutionException | InterruptedException e) {
+            System.out.println(futureSum.get(10, TimeUnit.MILLISECONDS));
+            System.out.println(futureLengthOfTheHypotenuse.get(10, TimeUnit.MILLISECONDS));
+            System.out.println(futureFactorial.get(10, TimeUnit.MILLISECONDS));
+        } catch (ExecutionException | InterruptedException | TimeoutException e) {
             e.printStackTrace();
         }
         executorService.shutdown();
